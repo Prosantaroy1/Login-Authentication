@@ -5,6 +5,7 @@ import About from "../component/pages/About/About";
 import Login from "../component/pages/Login/Login";
 import Register from "../component/pages/Register/Register";
 
+
 const router = createBrowserRouter([
     {
       path: "/",
@@ -17,17 +18,18 @@ const router = createBrowserRouter([
         {
             path: '/about',
             element: <About/>
+        },
+        {
+          path: '/login',
+          element: <Login/>
+        },
+        {
+          path: '/register',
+          element:<Register/>
         }
       ]
-    },
-    {
-      path: '/login',
-      element: <Login/>
-    },
-    {
-      path: '/register',
-      element:<Register/>
     }
+   
   ]);
 
 export default router;
